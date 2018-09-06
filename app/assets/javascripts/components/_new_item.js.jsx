@@ -1,5 +1,6 @@
-var NewItem= React.createClass({
+var NewItem = React.createClass({
     handleClick() {
+        console.log("\n == NewItem: handleClick ==");
         var name    = this.refs.name.value;
         var description = this.refs.description.value;
         $.ajax({
@@ -12,6 +13,7 @@ var NewItem= React.createClass({
         });
     },
     render() {
+        console.log("\n == NewItem: render ==");
         return (
                 <div>
                     <input ref='name' placeholder='Enter the name of the item' />

@@ -47,7 +47,7 @@ GEM
     builder (3.2.3)
     byebug (9.0.6)
     concurrent-ruby (1.0.5)
-    connection_pool (2.2.1)
+    connection_pool (2.2.2)
     erubi (1.6.0)
     execjs (2.7.0)
     globalid (0.4.0)
@@ -103,7 +103,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (12.0.0)
     rdoc (4.3.0)
-    react-rails (2.2.0)
+    react-rails (2.3.1)
       babel-transpiler (>= 0.7.0)
       connection_pool
       execjs
@@ -154,7 +154,7 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   rails (= 5.1.0)
-  react-rails
+  react-rails (= 2.3.1)
   responders
   sass-rails
   sdoc
@@ -164,4 +164,4 @@ DEPENDENCIES
   web-console
 
 BUNDLED WITH
-   1.12.5
+   1.16.0.pre.3

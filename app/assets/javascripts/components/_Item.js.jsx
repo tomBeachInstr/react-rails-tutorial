@@ -1,8 +1,10 @@
 var Item = React.createClass({
     getInitialState() {
+        console.log("\n == Item: getInitialState ==");
         return {editable: false}
     },
     handleEdit() {
+        console.log("\n == Item: handleEdit ==");
         if(this.state.editable) {
             var name = this.refs.name.value;
             var id = this.props.item.id;
@@ -13,8 +15,8 @@ var Item = React.createClass({
         }
         this.setState({ editable: !this.state.editable })
     },
-
     render() {
+        console.log("\n == Item: render ==");
         var name = this.state.editable ? <input type='text' ref='name' defaultValue={this.props.item.name} /> : <h3>{this.props.item.name}</h3>;
         var description = this.state.editable ? <input type='text' ref='description' defaultValue={this.props.item.description} />: <p>{this.props.item.description}</p>;
         return (
